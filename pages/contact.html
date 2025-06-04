@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #945aff;
+      margin: 0;
+      padding: 0;
+    }
+    .contact-form {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #9959ff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .contact-form h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .contact-form button {
+      background-color: #59ff53;
+      color: rgb(0, 0, 0);
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .contact-form button:hover {
+      background-color: #8932b1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contact-form">
+    <h2>Contáctanos</h2>
+    <form action="mailto:tuemail@dominio.com" method="post" enctype="text/plain">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="subject">Asunto:</label>
+      <input type="text" id="subject" name="subject">
+
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+</body>
+</html>
+
